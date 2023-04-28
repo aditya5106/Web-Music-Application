@@ -40,11 +40,11 @@ function show(searchValue) {
         for (let key in music.data) {
             dataStore +=
                 ` <div class="video-content-cover">
-                    <div class="video-content">
+                    <div class="video-content" onclick="changeTrack(${key})">
                             <a href="#" class="video-box">
                                <img src="${music.data[key].album.cover_big}" alt="" style="border-radius: 5px;">
                                <div class="middle">
-                                    <i class="fa fa-play-circle fa-3x" onclick="changeTrack(${key})" style="color: white;"></i>
+                                    <i class="fa fa-play-circle fa-3x" style="color: white;"></i>
                                </div>
                             </a>
                         <div class="video-details">
