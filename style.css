@@ -271,7 +271,6 @@ img{
         grid-template-columns: 1fr;
         grid-gap: 10px;
         padding: 10px;
-        overflow-y:hidden;
     }
     .search-container{
         display: none;
