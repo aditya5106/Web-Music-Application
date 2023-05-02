@@ -5,8 +5,6 @@ let seek_slider = document.querySelector(".seek_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
 let music_cover = document.querySelector(".cover-img");
-let header = document.querySelector(".header");
-let footer = document.querySelector(".footer");
 let music_title = document.querySelector("#title");
 let middle = document.querySelector(".middle");
 let curr_track = document.createElement('audio');
@@ -98,22 +96,6 @@ function loadTrack(index, music) {
     updateTimer = setInterval(seekUpdate, 1000);
 }
 
-window.addEventListener('offline',function(){
-    searchInput.value="";
-    header.style.display='none';
-    footer.style.display='none';
-    cardsContainer.style.display='none';
-    document.getElementById("check-internet").style.display='flex';
-    document.getElementById("check-internet").innerHTML="You're offline. Check your connection.";
-});
-
-window.addEventListener('online',function(){
-    document.getElementById("check-internet").style.display='none';
-    header.style.display='flex';
-    footer.style.display='flex';
-    cardsContainer.style.display='grid';
-    show();
-});
 
 function resetValues() {
     curr_time.textContent = "00:00";
