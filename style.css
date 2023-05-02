@@ -135,13 +135,6 @@ img{
     overflow-x: hidden;
     height: calc(100vh - 116px);
 }
-#check-internet{
-    height: calc(100vh - 116px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-}
 .video-content-cover{
     position: relative;
     width: 100%;
